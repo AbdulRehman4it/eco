@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main_textclr: "#333333",
+              secndory_textclr: "#888888",
+              main_color: "#074A39",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="">
+      <nav class="xl:px-[100px] md:px-[5%] px-[3%] md:py-10 py-5">
+        <div class="max-w-full">
+          <div class="flex justify-between items-center">
+            <!-- Logo and Navigation -->
+
+            <!-- Logo -->
+            <div class="py-4 px-7 bg-white rounded-full">
+              <a href="">
+                <img
+                  src="./assets/imgs/logo.png"
+                  alt="Company Logo"
+                  class="w-full h-full"
+                />
+              </a>
+            </div>
+            <!-- Navigation Links -->
+            <div class="hidden lg:block">
+              <ul
+                class="flex 2xl:space-x-[50px] space-x-8 items-center bg-white py-4 px-8 rounded-full"
+              >
+                <li class="relative group">
+                  <a
+                    href="#"
+                    class="text-main_textclr text-base capitalize font-medium"
+                    >Carbon Credits</a
+                  >
+                  <span
+                    class="block h-[2px] bg-main_color absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                  ></span>
+                </li>
+                <li class="relative group">
+                  <a
+                    href="#"
+                    class="text-main_textclr text-base capitalize font-medium"
+                    >Strategy</a
+                  >
+                  <span
+                    class="block h-[2px] bg-main_color absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                  ></span>
+                </li>
+                <li class="relative group">
+                  <a
+                    href="#"
+                    class="text-main_textclr text-base capitalize font-medium"
+                    >Revenue</a
+                  >
+                  <span
+                    class="block h-[2px] bg-main_color absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                  ></span>
+                </li>
+                <li class="relative group">
+                  <a
+                    href="#"
+                    class="text-main_textclr text-base capitalize font-medium"
+                    >Impact</a
+                  >
+                  <span
+                    class="block h-[2px] bg-main_color absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                  ></span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Buttons and Social Icons -->
+            <div class="hidden lg:flex">
+              <a
+                href="./contect.html"
+                class="bg-white px-10 py-4 rounded-full font-semibold text-black"
+              >
+                Contact us
+              </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button
+                id="mobile-menu-button"
+                class="text-black focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="space-y-4 px-4 pt-10 pb-3 text-center">
+            <li>
+              <a
+                href=""
+                class="block text-main_textclr text-base capitalize font-medium"
+                >Carbon Credits</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block text-main_textclr text-base capitalize font-medium"
+                >Strategy</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="block text-main_textclr text-base capitalize font-medium"
+                >Revenue</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="block text-main_textclr text-base capitalize font-medium"
+                >Impact</a
+              >
+            </li>
+          </ul>
+          <!-- <div class="flex items-center md:gap-10 gap-5 justify-center">
+           
+
+           
+          </div> -->
+          <div class="flex items-center justify-center">
+            <a
+              href="./contect.html"
+              class="bg-white px-10 py-4 rounded-full font-semibold text-black"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+   
+    <section class="2xl:pt-36 md:pt-20 pt-14 2xl:px-[100px] px-[5%]">
+      <div class="flex items-start justify-between">
+        <div class="w-[10%] xl:block hidden">
+          <img src="./assets/imgs/left.png" alt="" />
+        </div>
+        <div class="2xl:w-[60%] xl:w-[70%] text-center w-full">
+          <h1
+            class="font-semibold 2xl:text-[68px] xl:text-[56px] lg:text-5xl md:text-4xl text-2xl text-main_textclr 2xl:leading-[82px] lg:leading-[68px] md:leading-[50px]"
+          >
+            Reducing Carbon Footprints for a Sustainable Future
+          </h1>
+          <p
+            class="pt-5 md:text-xl text-base font-normal md:leading-10 leading-7 text-secndory_textclr"
+          >
+            Climate change is a pressing issue, intensified by unchecked carbon
+            emissions. Collaborate with us as we implement innovative solutions
+            to reduce our collective footprint. 
+          </p>
+        </div>
+        <div class="w-[10%] xl:block hidden">
+          <img src="./assets/imgs/right.png" alt="" />
+        </div>
+      </div>
+
+      <div class="pt-12">
+        <img src="./assets/imgs/heroimg.png" alt="" />
+      </div>
+    </section>
+ 
+    <section class="2xl:pt-[121px] md:pt-36 pt-14 2xl:px-[100px] px-[5%]">
+      <div
+        class="flex items-start justify-between lg:flex-row flex-col lg:text-start text-center"
+      >
+        <div class="lg:w-[50%] w-full">
+          <h1
+            class="font-semibold 2xl:text-[68px] xl:text-[56px] lg:text-4xl md:text-4xl text-2xl text-main_textclr 2xl:leading-[82px] xl:leading-[70px] lg:leading-[60px] md:leading-[50px]"
+          >
+            Understand Carbon Credits at a Glance
+          </h1>
+        </div>
+        <div class="lg:w-[50%] w-full">
+          <p
+            class="2xl:text-[22px] text-base font-normal 2xl:leading-[50px] xl:leading-9 leading-7 2xl:pt-4 lg:pt-3 pt-5 text-secndory_textclr"
+          >
+            Our streamlined guide helps you grasp the significance of carbon
+            credits and their role in reducing emissions. By implementing these
+            mechanisms, you can align your business activities with sustainable
+            practices. 
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="grid lg:grid-cols-3 xl:gap-10 gap-8 pt-20 md:grid-cols-2 grid-cols-1"
+      >
+        <div class=" ">
+          <div class="border-[#D4E2BE] border-2 text-2xl"></div>
+          <img src="./assets/imgs/icon1.png" alt="" class="pt-7" />
+          <h1
+            class="2xl:text-2xl xl:text-xl text-base text-main_textclr font-semibold pt-5"
+          >
+            Carbon Credits Enable Sustainability
+          </h1>
+          <p
+            class="2xl:text-lg xl:text-base text-sm font-normal 2xl:leading-10 xl:leading-7 leading-5 pt-2 text-secndory_textclr"
+          >
+            Utilize credits to maintain a balanced carbon footprint. Enable your
+            organization to meet regulatory demands while fostering an
+            eco-friendly operational model that underlines your commitment to
+            sustainability.
+          </p>
+          <img
+            src="./assets/imgs/card1.png"
+            alt=""
+            class="pt-7 rounded-[40px]"
+          />
+        </div>
+        <div class=" ">
+          <div class="border-[#D4E2BE] border-2 text-2xl"></div>
+          <img src="./assets/imgs/icon2.png" alt="" class="pt-7" />
+          <h1
+            class="2xl:text-2xl xl:text-xl text-base text-main_textclr font-semibold pt-5"
+          >
+            REDD+ Supports Forest Conservation
+          </h1>
+          <p
+            class="2xl:text-lg xl:text-base text-sm font-normal 2xl:leading-10 xl:leading-7 leading-5 pt-2 text-secndory_textclr"
+          >
+            Participate in combating deforestation and enhancing ecological
+            integrity. REDD+ initiatives provide an essential framework for
+            preserving natural habitats, thereby supporting biodiversity and
+            contributing.
+          </p>
+          <img
+            src="./assets/imgs/card2.png"
+            alt=""
+            class="pt-7 rounded-[40px]"
+          />
+        </div>
+        <div class=" ">
+          <div class="border-[#D4E2BE] border-2 text-2xl"></div>
+          <img src="./assets/imgs/icon3.png" alt="" class="pt-7" />
+          <h1
+            class="2xl:text-2xl xl:text-xl text-base text-main_textclr font-semibold pt-5"
+          >
+            Market Impact Drives <br class="lg:block hidden xl:hidden" />Growth
+          </h1>
+          <p
+            class="2xl:text-lg xl:text-base text-sm font-normal 2xl:leading-10 xl:leading-7 leading-5 pt-2 text-secndory_textclr"
+          >
+            Encourage development that harmonizes with environmental
+            preservation. By leveraging market mechanisms, businesses can drive
+            innovation and growth while remaining aligned with global
+            sustainability goals.
+          </p>
+          <img
+            src="./assets/imgs/card3.png"
+            alt=""
+            class="pt-7 rounded-[40px]"
+          />
+        </div>
+      </div>
+    </section>
+   
+    <section
+      class="2xl:py-[150px] md:py-20 xl:py-36 py-14 2xl:px-[100px] px-[5%]"
+    >
+      <div
+        class="flex items-center justify-between lg:flex-row flex-col 2xl:gap-[100px] xl:gap-16 lg:gap-5 gap-10"
+      >
+        <div class="lg:w-[50%] w-full">
+          <div class="lg:text-start text-center">
+            <h1
+              class="font-semibold 2xl:text-[68px] xl:text-[56px] lg:text-4xl md:text-4xl text-2xl text-main_textclr 2xl:leading-[82px] xl:leading-[70px] lg:leading-[60px] md:leading-[50px]"
+            >
+              Our Strategy for a Sustainable Future
+            </h1>
+            <p
+              class="2xl:text-[22px] text-base font-normal 2xl:leading-[50px] xl:leading-9 leading-7 2xl:pt-4 lg:pt-3 pt-5 text-secndory_textclr"
+            >
+              EcoField empowers organizations to achieve sustainability goals
+              through cutting-edge technology. By integrating AI and blockchain,
+              you can safeguard forest ecosystems and ensure transparent carbon
+              credit tracking for a sustainable future.
+            </p>
+          </div>
+          <div class="flex xl:gap-10 gap-5 xl:pt-12 pt-10 md:flex-row flex-col">
+            <div
+              class="md:w-1/2 w-full flex lg:items-start items-center item-center lg:justify-start lg:text-start justify-center flex-col text-center"
+            >
+              <div class="">
+                <img src="./assets/imgs/icon4.png" alt="" class="" />
+              </div>
+              <h2
+                class="font-semibold xl:text-[22px] text-base text-main_textclr pt-4"
+              >
+                AI Monitoring
+              </h2>
+              <p
+                class="2xl:text-[22px] xl:text-base text-sm font-normal 2xl:leading-10 xl:leading-7 leading-5 pt-2 text-secndory_textclr"
+              >
+                Leverage real-time analysis to maintain forest health and
+                proactively manage potential risks, ensuring ecosystems remain
+                protected and thriving.
+              </p>
+            </div>
+            <div
+              class="md:w-1/2 w-full flex lg:items-start items-center item-center lg:justify-start lg:text-start justify-center flex-col text-center"
+            >
+              <div class="">
+                <img src="./assets/imgs/icon5.png" alt="" class="" />
+              </div>
+              <h2
+                class="font-semibold xl:text-[22px] text-base text-main_textclr pt-4"
+              >
+                Blockchain Security
+              </h2>
+              <p
+                class="2xl:text-[22px] xl:text-base text-sm font-normal 2xl:leading-10 xl:leading-7 leading-5 pt-2 text-secndory_textclr"
+              >
+                Ensure all carbon credit activities are accurately recorded and
+                verifiable, building trust and enhancing accountability among
+                all participants.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-[50%] w-full">
+          <img src="./assets/imgs/img1.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="2xl:py-20 py-16 2xl:px-[100px] px-[5%] bg-[#D4E2BE] flex items-center justify-center"
+    >
+      <div class="2xl:w-[70%] xl:w-[86%] w-full">
+        <div class="text-center">
+          <h1
+            class="font-semibold 2xl:text-[68px] xl:text-[56px] lg:text-5xl md:text-4xl text-2xl text-main_textclr 2xl:leading-[82px] lg:leading-[68px] md:leading-[50px]"
+          >
+            Innovative Revenue Model and Investment Opportunities
+          </h1>
+          <p
+            class="pt-5 md:text-lg text-base font-normal md:leading-10 leading-7 text-secndory_textclr"
+          >
+            Participate in EcoField's profitable and eco-friendly model that
+            merges NFTs and carbon credits to provide stakeholders with
+            rewarding dividends.
+          </p>
+        </div>
+        <div
+          class="flex items-center 2xl:gap-10 gap-5 pt-10 lg:flex-row flex-col"
+        >
+          <button
+            class="py-4 px-7  lg:w-[33%] w-full justify-center rounded-full bg-white flex items-center gap-2 xl:text-xl text-base text-main_textclr font-medium capitalize"
+          >
+            <img src="./assets/imgs/logo2.png" alt="Company Logo" class="" />
+            NFT Integration
+          </button>
+          <button
+            class="py-4 px-7 lg:w-[33%] w-full justify-center  rounded-full bg-white flex items-center gap-2 xl:text-xl text-base text-main_textclr font-medium capitalize"
+          >
+            <img src="./assets/imgs/logo2.png" alt="Company Logo" class="" />
+            Revenue Potential
+          </button>
+          <button
+            class="py-4 px-7 lg:w-[33%] w-full justify-center rounded-full bg-white flex items-center gap-2 xl:text-xl text-base text-main_textclr font-medium capitalize"
+          >
+            <img src="./assets/imgs/logo2.png" alt="Company Logo" class="" />
+            Secure Transactions
+          </button>
+        </div>
+      </div>
+    </section>
+ 
+    <section
+      class="2xl:py-[150px] md:py-20 xl:py-36 py-14 2xl:px-[100px] px-[5%]"
+    >
+      <div
+        class="flex items-center justify-between lg:flex-row flex-col 2xl:gap-[100px] xl:gap-16 lg:gap-5 gap-10"
+      >
+        <div class="lg:w-[50%] w-full">
+          <div class="lg:text-start text-center">
+            <h1
+              class="font-semibold 2xl:text-[68px] xl:text-[50px] lg:text-4xl md:text-4xl text-2xl text-main_textclr 2xl:leading-[82px] xl:leading-[70px] lg:leading-[60px] md:leading-[50px]"
+            >
+              Environmental Impact and NFT Benefits
+            </h1>
+            <p
+              class="2xl:text-[22px] text-base font-normal 2xl:leading-[50px] xl:leading-9 leading-7 2xl:pt-4 lg:pt-3 pt-5 text-secndory_textclr"
+            >
+              Through our innovative NFT-based model, EcoField is pioneering new
+              approaches in environmental conservation. By harnessing blockchain
+              technology, we effectively reduce carbon emissions and provide
+              tangible benefits to our stakeholders.
+            </p>
+            <button
+              class="bg-main_color   px-10 py-4 rounded-full font-semibold text-white 2xl:mt-[70px] md:mt-14 mt-5"
+            >
+              Get involved
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-[50%] w-full space-y-4">
+          <div class="flex items-center xl:gap-5 gap-2 md:flex-row flex-col">
+            <div
+              class="2xl:w-[80%] lg:w-[75%] md:w-[80%] bg-white 2xl:rounded-[40px] rounded-3xl 2xl:p-10 xl:p-8 lg:p-6 md:p-8 p-6"
+            >
+              <h1 class="font-semibold xl:text-xl text-base text-main_textclr">
+                Environmental Preservation
+              </h1>
+              <p
+                class="2xl:text-lg xl:text-sm text-xs text-secndory_textclr font-normal 2xl:pt-5 xl:pt-1"
+              >
+                Support sustainable ecosystems for future stability.
+              </p>
+            </div>
+            <div
+              class="2xl:w-[20%] md:block hidden lg:w-[25%] md:w-[20%] bg-white 2xl:rounded-[40px] rounded-3xl flex items-center justify-center 2xl:p-12 xl:p-9 p-6"
+            >
+              <img src="./assets/imgs/extra.png" alt="" />
+            </div>
+          </div>
+
+          <div class="flex items-center xl:gap-5 gap-2 md:flex-row flex-col">
+            <div
+              class="2xl:w-[20%] md:block hidden lg:w-[25%] md:w-[20%] bg-white 2xl:rounded-[40px] rounded-3xl flex items-center justify-center 2xl:p-12 xl:p-9 p-6"
+            >
+              <img src="./assets/imgs/icon7.png" alt="" />
+            </div>
+            <div
+              class="2xl:w-[80%] lg:w-[75%] md:w-[80%] bg-white 2xl:rounded-[40px] rounded-3xl 2xl:p-10 xl:p-8 lg:p-6 md:p-8 p-6"
+            >
+              <h1 class="font-semibold xl:text-xl text-base text-main_textclr">
+                Transparent Records
+              </h1>
+              <p
+                class="2xl:text-lg xl:text-sm text-xs text-secndory_textclr font-normal 2xl:pt-5 xl:pt-1"
+              >
+                Ensure verifiable proof of carbon credit transactions.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center xl:gap-5 gap-2 md:flex-row flex-col">
+            <div
+              class="2xl:w-[80%] lg:w-[75%] md:w-[80%] bg-white 2xl:rounded-[40px] rounded-3xl 2xl:p-10 xl:p-8 lg:p-6 md:p-8 p-6"
+            >
+              <h1 class="font-semibold xl:text-xl text-base text-main_textclr">
+                Community Contribution
+              </h1>
+              <p
+                class="2xl:text-lg xl:text-sm text-xs text-secndory_textclr font-normal 2xl:pt-5 xl:pt-1"
+              >
+                Encourage stakeholder participation in conservation efforts.
+              </p>
+            </div>
+            <div
+              class="2xl:w-[20%] md:block hidden lg:w-[25%] md:w-[20%] bg-white 2xl:rounded-[40px] rounded-3xl flex items-center justify-center 2xl:p-12 xl:p-9 p-6"
+            >
+              <img src="./assets/imgs/icon8.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img src="./assets/imgs/faq.png" alt="" />
+    <section
+      class="2xl:py-[150px] md:py-20 xl:py-36 py-14 2xl:px-[100px] px-[5%]"
+    >
+      <div class="flex items-start justify-between">
+        <div class="w-[10%] xl:block hidden">
+          <img src="./assets/imgs/left.png" alt="" />
+        </div>
+        <div class="2xl:w-[60%] xl:w-[70%] text-center w-full">
+          <h1
+            class="font-semibold 2xl:text-[68px] xl:text-[56px] lg:text-5xl md:text-4xl text-2xl text-main_textclr 2xl:leading-[82px] lg:leading-[68px] md:leading-[50px]"
+          >
+            Frequently Asked Questions
+          </h1>
+          <p
+            class="pt-5 md:text-xl text-base font-normal md:leading-10 leading-7 text-secndory_textclr"
+          >
+            Discover answers to common questions about our services and their
+            benefits, providing clarity and understanding.
+          </p>
+        </div>
+        <div class="w-[10%] xl:block hidden">
+          <img src="./assets/imgs/right.png" alt="" />
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center items-center pt-10 md:px-[4%]">
+        <div class="md:space-y-7 space-y-4">
+          <div class="bg-white rounded-[30px] shadow-lg lg:p-12 md:p-7 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-start focus:outline-none"
+            >
+              <h1
+                class="lg:text-[26px] md:text-xl text-base text-main_textclr text-left leading-6 md:leading-10 font-normal"
+              >
+                What is the purpose of carbon credits?
+              </h1>
+
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300 md:mt-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <p
+                class="text-secndory_textclr lg:text-lg text-sm pt-4 font-normal xl:leading-10 md:leading-8 leading-0"
+              >
+                Carbon credits allow businesses to offset emissions by funding
+                projects that reduce CO2, like reforestation or renewable
+                energy. This helps promote sustainability and supports global
+                climate goals.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="bg-white rounded-[30px] shadow-lg lg:p-12 md:p-7 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-start focus:outline-none"
+            >
+              <h1
+                class="lg:text-[26px] md:text-xl text-base text-main_textclr text-left leading-6 md:leading-10 font-normal"
+              >
+                How does your investment model support sustainability?
+              </h1>
+
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300 md:mt-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <p
+                class="text-secndory_textclr lg:text-lg text-sm pt-4 font-normal xl:leading-10 md:leading-8 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+          <!-- faq3 -->
+          <div class="bg-white rounded-[30px] shadow-lg lg:p-12 md:p-7 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-start focus:outline-none"
+            >
+              <h1
+                class="lg:text-[26px] md:text-xl text-base text-main_textclr text-left leading-6 md:leading-10 font-normal"
+              >
+                What does the NFT benefit feature entail?
+              </h1>
+
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300 md:mt-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <p
+                class="text-secndory_textclr lg:text-lg text-sm pt-4 font-normal xl:leading-10 md:leading-8 leading-0"
+              >
+                The NFT benefit feature provides exclusive perks like access to
+                events, content, or discounts for NFT holders. It adds value by
+                linking ownership to special rewards and experiences.
+              </p>
+            </div>
+          </div>
+          <!-- faq4 -->
+          <div class="bg-white rounded-[30px] shadow-lg lg:p-12 md:p-7 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-start focus:outline-none"
+            >
+              <h1
+                class="lg:text-[26px] md:text-xl text-base text-main_textclr text-left leading-6 md:leading-10 font-normal"
+              >
+                How transparent is the impact data provided?
+              </h1>
+
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300 md:mt-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <p
+                class="text-secndory_textclr lg:text-lg text-sm pt-4 font-normal xl:leading-10 md:leading-8 leading-0"
+              >
+                The impact data provided is highly transparent, often sourced
+                from third-party audits and verifiable projects. This ensures
+                accurate tracking and accountability of environmental or social
+                outcomes.
+              </p>
+            </div>
+          </div>
+
+          <!-- faq4 -->
+          <div class="bg-white rounded-[30px] shadow-lg lg:p-12 md:p-7 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-start focus:outline-none"
+            >
+              <h1
+                class="lg:text-[26px] md:text-xl text-base text-main_textclr text-left leading-6 md:leading-10 font-normal"
+              >
+                Can individuals benefit from carbon offset programs?
+              </h1>
+
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300 md:mt-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <p
+                class="text-secndory_textclr lg:text-lg text-sm pt-4 font-normal xl:leading-10 md:leading-8 leading-0"
+              >
+                Yes, individuals can benefit from carbon offset programs by
+                purchasing carbon credits to offset their personal carbon
+                emissions, such as from travel or energy use.
+              </p>
+            </div>
+          </div>
+          <!-- More FAQ items can be added similarly -->
+        </div>
+      </div>
+    </section>
+ 
+    <section class="2xl:px-[100px] md:py-6 py-10 px-[5%] bg-[#074A39] flex items-center justify-between md:flex-row flex-col md:gap-0 gap-5">
+      <div class="">
+        <h1 class="font-normal md:text-lg text-base text-white md:block hidden ">© 2024 Ecofield</h1>
+       <img src="./assets/imgs/logofooter.png" alt="" class="md:hidden block">
+
+      </div>
+      <div class="">
+       <img src="./assets/imgs/logofooter.png" alt="" class="md:block hidden">
+
+      </div>
+      <div class="flex items-center lg:gap-7 lg:flex-row flex-col">
+       <h1 class="font-normal md:text-lg text-base text-white md:hidden block  ">© 2024 Ecofield</h1>
+
+        <a href="" class="font-normal md:text-lg text-base text-white ">Privacy Policy</a>
+        <a href="" class="font-normal md:text-lg text-base text-white ">Term of Services</a>
+
+      </div>
+    </section>
+ 
+
+  
+    <script>
+      // Select all FAQ toggle buttons
+      const faqToggles = document.querySelectorAll(".faq-toggle");
+
+      faqToggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          // Get the content and icon related to the clicked toggle
+          const faqContent = toggle.nextElementSibling;
+          const faqIcon = toggle.querySelector(".faq-icon");
+
+          // Toggle the max-height for smooth expansion and collapse
+          if (faqContent.style.maxHeight) {
+            faqContent.style.maxHeight = null; // Close it
+          } else {
+            faqContent.style.maxHeight = faqContent.scrollHeight + "px"; // Open it
+          }
+
+          // Rotate icon
+          faqIcon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
