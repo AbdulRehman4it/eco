@@ -183,9 +183,64 @@
         </div>
       </div>
 
-      <div class="pt-12">
+      <div class="pt-12 mbl  md:hidden sm:block">
         <img src="./assets/imgs/heroimg.png" alt="" />
       </div>
+<div class="pt-12 desktop hidden sm:hidden md:flex lg:flex">
+  <!-- Container for Child Divs -->
+<div class="flex justify-between items-center w-full h-[480px] mx-auto space-x-4">
+  <!-- Div 1 -->
+  <div class="flex justify-center items-center w-1/5 h-[50%] bg-[url('../imgs/h1.png')] bg-cover bg-center text-white rounded-[60px] shadow-md">
+  </div>
+
+  <!-- Div 2 -->
+  <div class="flex flex-col justify-between w-1/5 h-[80%] rounded-[60px] bg-white">
+    <div class="flex flex-col items-center justify-center h-[50%] p-4 text-center bg-white rounded-t-[60px] ">
+      <h2 class="text-lg font-semibold text-main_textclr">10,000 credits</h2>
+      <p class="text-sm font-normal text-secndory_textclr">
+        Carbon credits issued to offset emissions.
+      </p>
+    </div>
+    <div class="flex flex-col items-center justify-center h-[50%] p-4 text-center bg-[url('../imgs/h3.png')] bg-cover bg-center rounded-b-[60px]">
+      <h2 class="text-lg font-semibold text-main_textclr">5 eco-projects</h2>
+      <p class="text-sm font-normal text-secndory_textclr">
+        Driving sustainability through innovative solutions.
+      </p>
+    </div>
+  </div>
+
+  <!-- Div 3 -->
+  <div class="flex justify-center items-center w-1/5 h-[100%] bg-[url('../imgs/h4.png')] bg-cover bg-center text-white rounded-[60px] relative">
+    <p class="text-base font-medium text-[#074A39] bg-white p-4 rounded-[60px] absolute bottom-0  text-center mb-4 w-[90%]">
+      Show us your impact in reducing emissions.
+    </p>
+  </div>
+
+  <!-- Div 4 -->
+  <div class="flex flex-col items-center justify-between w-1/5 h-[60%] bg-[url('../imgs/h5.png')] bg-cover bg-center rounded-[60px] relative">
+    
+    <p class="text-base font-medium text-[#074A39] bg-white p-4 rounded-[60px] absolute bottom-0 w-[90%] text-center mb-4">
+      Invest and make a change
+    </p>
+  </div>
+
+  <!-- Div 5 -->
+  <div class="flex justify-center items-center w-1/5 h-[50%] bg-[url('../imgs/h6.png')] bg-cover bg-center text-black rounded-[60px]">
+    <p class="text-base font-medium text-center px-4">
+      Environmental Impact
+    </p>
+  </div>
+</div>
+
+<!-- Add AOS Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</div>
+
     </section>
  
     <section class="2xl:pt-[121px] md:pt-36 pt-14 2xl:px-[100px] px-[5%]">
